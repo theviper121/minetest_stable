@@ -1292,11 +1292,8 @@ int ModApiEnvMod::l_selective_emerge_add_area(lua_State *L)
 	sortBoxVerticies(bpmin, bpmax);
 
 	ServerMap &map = env->getServerMap();
-
 	map.m_areas_should_emerge.emplace(bpmin, bpmax);
-	for (auto &area_it : map.m_areas_should_emerge) {
-		infostream << area_it.first.X<< std::endl;
-	}
+
 	lua_pushboolean(L, true);
 	return 1;
 }

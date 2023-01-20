@@ -155,7 +155,7 @@ private:
 	// delete_area(p1, p2) -> true/false
 	static int l_delete_area(lua_State *L);
 
-	// delete_area(p1, p2) -> true/false
+	// add area to be emerged(p1, p2)
 	static int l_selective_emerge_add_area(lua_State *L);
 
 	// get_perlin(seeddiff, octaves, persistence, scale)
