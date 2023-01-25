@@ -645,7 +645,7 @@ void MapgenBasic::generateBiomes()
 		u16 depth_water_top = 0;
 		u16 depth_riverbed = 0;
 		s16 biome_y_min = -MAX_MAP_GENERATION_LIMIT;
-		u32 vi = vm->m_area.index(x, node_max.Y, z);
+		u32 vi = vm->m_area.index(x, node_max.Y - 1, z);
 
 		// Check node at base of mapchunk above, either a node of a previously
 		// generated mapchunk or if not, a node of overgenerated base terrain.
